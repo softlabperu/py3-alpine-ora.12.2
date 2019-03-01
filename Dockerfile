@@ -15,9 +15,7 @@ RUN set -ex \
             musl-dev \
             pcre-dev \
             python3-dev \
-            linux-headers \
-    && pyvenv /venv \
-    && /venv/bin/pip install -U pip
+            linux-headers
 
 RUN unzip instantclient-basic-linux.x64-12.2.0.1.0.zip && \
     mv instantclient_12_2/ /usr/lib/ && \
